@@ -9,21 +9,21 @@ const projects = [
     category: "Website",
     tools: "Angular, Next.js, NestJS, MongoDB",
     image: "/images/APS 1.png",
-    link: "https://apsbeur.com/",
+    link: "https://schoolwebsite-demo.vercel.app/",
   },
   {
     title: "School Website with Seo ",
     category: "Website",
     tools: "Angular, Next.js, NestJS, CMS",
     image: "/images/APS 2.png",
-    link: "https://apsbeur.com/",
+    link: "https://demo-school.up.railway.app/",
   },
   {
     title: "Admission Agent Website",
     category: "Website",
     tools: "Angular, Next.js, NestJS, Workflows",
     image: "/images/ASHISH_.png",
-    link: "#",
+    link: "https://ashish-ruddy.vercel.app/",
   },
 ];
 
