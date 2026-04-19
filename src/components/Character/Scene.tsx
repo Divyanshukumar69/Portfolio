@@ -106,7 +106,9 @@ const Scene = () => {
         landingDiv.addEventListener("touchstart", onTouchStart);
         landingDiv.addEventListener("touchend", onTouchEnd);
       }
+      let isMounted = true;
       const animate = () => {
+        if (!isMounted) return;
         requestAnimationFrame(animate);
         if (headBone) {
           handleHeadRotation(
@@ -127,6 +129,7 @@ const Scene = () => {
       };
       animate();
       return () => {
+        isMounted = false;
         clearTimeout(debounce);
         scene.clear();
         renderer.dispose();
