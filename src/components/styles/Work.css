@@ -114,6 +114,50 @@
   align-items: center;
 }
 
+.carousel-visit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 28px;
+  background: transparent;
+  border: 1px solid var(--accentColor);
+  color: var(--accentColor);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 50px;
+  margin-top: 30px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  width: fit-content;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.carousel-visit-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--accentColor);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -1;
+}
+
+.carousel-visit-btn:hover {
+  color: var(--backgroundColor);
+  box-shadow: 0 0 25px rgba(94, 234, 212, 0.4);
+  transform: translateY(-3px);
+}
+
+.carousel-visit-btn:hover::before {
+  width: 100%;
+}
+
 /* ── Navigation Arrows ── */
 .carousel-arrow {
   position: absolute;

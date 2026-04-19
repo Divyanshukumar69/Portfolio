@@ -9,18 +9,21 @@ const projects = [
     category: "Website",
     tools: "Angular, Next.js, NestJS, MongoDB",
     image: "/images/APS 1.png",
+    link: "https://apsbeur.com/",
   },
   {
     title: "School Website with Seo ",
     category: "Website",
     tools: "Angular, Next.js, NestJS, CMS",
     image: "/images/APS 2.png",
+    link: "https://apsbeur.com/",
   },
   {
     title: "Admission Agent Website",
     category: "Website",
     tools: "Angular, Next.js, NestJS, Workflows",
     image: "/images/ASHISH_.png",
+    link: "#",
   },
 ];
 
@@ -100,6 +103,15 @@ const Work = () => {
                           <span className="tools-label">Tools & Features</span>
                           <p>{project.tools}</p>
                         </div>
+                        <a
+                          href={project.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="carousel-visit-btn"
+                          data-cursor="disable"
+                        >
+                          Visit the site
+                        </a>
                       </div>
                     </div>
                     <div className="carousel-image-wrapper">
